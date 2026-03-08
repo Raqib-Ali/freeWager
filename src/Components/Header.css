@@ -1,0 +1,67 @@
+/* header{
+    overflow: hidden;
+} */
+
+.logo{
+    font-size: max(1rem, 2vw);
+}
+
+.navigation span Link{
+    font-size: max(1.1rem, 1vw)
+}
+
+
+@media (width < 650px){  
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    right:0px;
+    background-color: white;
+    padding: 70px 20px;
+    width: 55%;
+    height: 100vh;
+    transform: translate(100%);
+    transition: all ease-in-out 0.4s;
+}
+
+
+
+.button{
+    background: aquamarine;
+    color: black;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 3;
+}
+
+.navigation[data-visible="true"]{
+    transform: translate(0%);
+}
+
+}
+
+
+@media (width > 650px) {
+ 
+    .navigation {
+        display: flex;
+        gap: 10px;
+    }
+
+    .button{
+        display: none;     
+    }
+
+
+}
+
+
+
+
+

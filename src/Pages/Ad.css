@@ -1,0 +1,68 @@
+
+.ad-layout{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+    img{
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+   
+    .next-button{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       width: 100%;
+       position: absolute;
+       top: 40%;
+       padding: 10px;
+       height: 100px;
+
+       button{
+          display: none;
+       }
+    }
+
+     .next-button:hover{
+
+       button{
+          display: block;
+          height: 40px;
+          width: 40px;
+         
+       }
+    }
+
+}
+
+.bg{
+    background-color: aquamarine;
+}
+
+.pricing{
+    font-size: 4vw;
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.Service-man{
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.seller-prof{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@media (width > 992px){
+
+    .ad-layout{
+        grid-template-columns: 8fr 4fr;
+    }
+
+}

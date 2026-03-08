@@ -1,0 +1,129 @@
+* {
+    scrollbar-width: none;
+}
+
+/* Mobile */
+.hero {
+    display: flex;
+    flex-direction: column;  
+    gap: 15px;
+    width: 100%;
+}
+
+.title {
+
+    h1 {
+        font-size: max(2.5vw, 1.7rem);
+        font-weight: 600;
+    }
+}
+
+.col1 {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    padding-block: 12px;
+}
+
+.title {
+    width: 80%;
+    /* background-color: azure; */
+    padding: max(1rem, 3vw);
+}
+
+.img{
+     display: flex;
+     align-items: center;
+}
+
+.h2{
+    font-size: max(2.5vw, 1.5rem);
+    font-weight: 600;
+    text-align: center;
+    margin-block: 40px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    
+    .cat-card {
+        position: relative;
+        padding: 20px;
+        min-height: 180px;
+        background-color: rgba(240, 248, 255, 0.8);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        overflow: hidden;
+        transition: transform 150ms ease, box-shadow 150ms ease;
+
+        h3{
+            font-size: min(1.5rem, 5vw);
+            margin: 0;
+        }
+    }
+
+    .cat-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .cat-card__overlay {
+        position: relative;
+        z-index: 1;
+    }
+
+    .cat-card::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.25) 0%,
+            rgba(0, 0, 0, 0.6) 100%
+        );
+        z-index: 0;
+        pointer-events: none;
+    }
+
+}
+
+.ads {
+    display: flex;
+    overflow-x: auto;
+    gap: 18px;
+}
+
+
+
+/* Tablet */
+@media (width >= 600px) {}
+
+
+/* Desktop */
+@media (width >= 768px) {
+
+.hero {
+    flex-direction: row ;
+    gap: 15px;
+}
+    .title p {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    }
+
+    .h2{
+    margin-block: 70px;
+    }
+}
