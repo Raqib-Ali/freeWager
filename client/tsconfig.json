@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+     "module": "ESNext",
+     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+     "moduleResolution": "bundler",
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
