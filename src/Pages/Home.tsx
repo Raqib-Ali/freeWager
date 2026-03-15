@@ -84,6 +84,8 @@ export function Home() {
         <CarouselExample />
       </div>
 
+      {/* Services categories section */}
+
       <div className="containers">
         <div>
           <h2 className="h2">Browse Services</h2>
@@ -106,9 +108,11 @@ export function Home() {
         </div>
       </div>
 
-      <div className="containers mt-20 grid md:grid-cols-2 gap-3.5 h-[500px]">
+      {/* Details section  */}
+
+      <div className="containers mt-20 grid md:grid-cols-2 gap-3.5 ">
         <div
-          className="h-full rounded-2xl relative"
+          className="h-[350px] md:h-[500px] rounded-2xl relative"
           style={{
             backgroundImage: `url(${
               new URL("../assets/electrician-2.jpg", import.meta.url).href
@@ -127,7 +131,7 @@ export function Home() {
           </div>
         </div>
         <div className="flex flex-col gap-3.5">
-          <div className="flex-1 bg-gray-600 rounded-2xl text-white px-6 flex items-center">
+          <div className="flex-1 bg-gray-600 rounded-2xl text-white p-6 flex items-center">
             <div>
               <h3 className="text-4xl mb-3.5 text-amber-400 font-semibold">
                 Customer First, Always
@@ -140,7 +144,7 @@ export function Home() {
               </p>
             </div>
           </div>
-          <div className="flex-1 bg-amber-500 rounded-2xl px-6 flex items-center">
+          <div className="flex-1 bg-amber-500 rounded-2xl p-6 flex items-center">
             <div className="flex-1">
               <h3 className="text-4xl mb-3.5 text-white text-center font-semibold">
                 Your Deserves the Best Care
@@ -153,6 +157,8 @@ export function Home() {
           </div>
         </div>
       </div>
+
+      {/* Recent Services */}
 
       <div className="border-bottom containers">
         <h2 className="h2">Recent Services</h2>
